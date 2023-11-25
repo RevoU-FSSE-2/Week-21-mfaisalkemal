@@ -3,6 +3,7 @@ from flask import Flask
 from db import db, db_init
 from common.bcrypt import bcrypt
 from auth.apis import auth_blp
+from user.apis import user_blp
 
 app = Flask (__name__)
 
@@ -14,5 +15,6 @@ bcrypt.init_app(app)
 
 app.register_blueprint(auth_blp, url_prefix="/auth")
 
-with app.app_context():
-    db_init()
+
+# with app.app_context():
+#     db_init()
