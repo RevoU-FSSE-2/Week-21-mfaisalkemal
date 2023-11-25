@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "958beaaf-0296-46f4-b213-86cbea41c243",
+		"name": "week-21-mfaisalkemal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28912545"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"test1\",\r\n    \"password\": \"test123\",\r\n    \"bio\": \"halo halo bandung\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:5000/auth/registration"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"test1\",\r\n    \"password\": \"test123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:5000/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6InRlc3QxIiwiZXhwIjoxNzAwODg5NjUwfQ.3Fu7t1GGf-wCxRcRkgbZxeLJgcKAurgSjmbCKszrAOY"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "127.0.0.1:5000/user"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "127.0.0.1:5000/tweet"
+			},
+			"response": []
+		}
+	]
+}
